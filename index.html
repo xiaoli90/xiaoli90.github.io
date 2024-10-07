@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 智能助手</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">HarmonyOS Developer</div>
+            <div class="nav-links">
+                <a href="#home">探索</a>
+                <a href="#design">设计</a>
+                <a href="#develop">开发</a>
+                <a href="#distribute">分发</a>
+                <a href="#ecosystem">生态合作</a>
+                <a href="#support">支持</a>
+            </div>
+            <div class="nav-right">
+                <div class="search-container">
+                    <svg class="search-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                    </svg>
+                    <input type="text" class="search-box" placeholder="搜索">
+                </div>
+                <div class="user-icon"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="ai-chat-container">
+        <div class="chat-header">
+            <div class="ai-avatar">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+                </svg>
+            </div>
+            <div class="chat-title">AI 智能助手</div>
+        </div>
+        <div class="chat-messages">
+            <div class="message ai-message">您好！我是 AI 智能助手。有什么我可以帮助您的吗？</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="输入您的问题...">
+            <button>发送</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
