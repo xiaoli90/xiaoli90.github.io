@@ -4,11 +4,19 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="整体目标：JS逆向学习路线图, Dream Blog">
-    <meta name="description" content="
-好的，这是一份精心为你定制的 JS 逆向学习路线图，分为 3 个阶段，共 60 天（也可以压缩到 30 天），适合你现在这种刚起步、有基础、有动力的情况。每阶段都有明确的目标、学习内容、练手项目和推荐工具。
+    <meta name="keywords" content="JS逆向基础篇, Dream Blog">
+    <meta name="description" content="Python基础Day 01：语言的介绍：
+机器语言
+汇编语言
+高级语言
 
-🧠 整体目标：让你在两个月">
+编译器分类：
+编译器
+解释器
+
+第一个python程序：1print(&amp;quot;hello world!&amp;quot;) # 输出：Hello world！
+
+变量">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +28,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>整体目标：JS逆向学习路线图 | Dream Blog</title>
+    <title>JS逆向基础篇 | Dream Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -337,12 +345,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">整体目标：JS逆向学习路线图</h1>
+                    <h1 class="description center-align post-title">JS逆向基础篇</h1>
                 </div>
             </div>
         </div>
@@ -395,7 +403,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2025-06-15
+                    2025-06-23
                 </div>
                 
 
@@ -416,313 +424,272 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <hr>
-<p>好的，这是一份<strong>精心为你定制的 JS 逆向学习路线图</strong>，分为 3 个阶段，共 60 天（也可以压缩到 30 天），适合你现在这种刚起步、有基础、有动力的情况。每阶段都有明确的目标、学习内容、练手项目和推荐工具。</p>
-<hr>
-<h2 id="🧠-整体目标："><a href="#🧠-整体目标：" class="headerlink" title="🧠 整体目标："></a>🧠 <strong>整体目标：</strong></h2><p>让你在两个月内：</p>
+                <h1 id="Python基础"><a href="#Python基础" class="headerlink" title="Python基础"></a>Python基础</h1><h2 id="Day-01："><a href="#Day-01：" class="headerlink" title="Day 01："></a>Day 01：</h2><h3 id="语言的介绍："><a href="#语言的介绍：" class="headerlink" title="语言的介绍："></a>语言的介绍：</h3><ul>
+<li>机器语言</li>
+<li>汇编语言</li>
+<li>高级语言</li>
+</ul>
+<h3 id="编译器分类："><a href="#编译器分类：" class="headerlink" title="编译器分类："></a>编译器分类：</h3><ul>
+<li>编译器</li>
+<li>解释器</li>
+</ul>
+<h3 id="第一个python程序："><a href="#第一个python程序：" class="headerlink" title="第一个python程序："></a>第一个python程序：</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;hello world!&quot;</span>) <span class="comment"># 输出：Hello world！</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p>变量是将数据存放于内存中，便于多次调用（防止重复数据多次创建，从而增大内存）</p>
+<h4 id="python垃圾回收机制"><a href="#python垃圾回收机制" class="headerlink" title="python垃圾回收机制"></a>python垃圾回收机制</h4><p><img src="/./assets/image-20250617104523382.png" alt="image-20250617104523382"><br>从<code>x=1</code>到<code>x=10</code>：</p>
+<p>python会创建一个新的空间用来存放10，1不指向就销毁了</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 变量</span></span><br><span class="line"><span class="comment"># ____________________________________________</span></span><br><span class="line"><span class="comment"># number</span></span><br><span class="line">x = <span class="number">1</span></span><br><span class="line"><span class="built_in">print</span>(x) <span class="comment"># 输出：1</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># string</span></span><br><span class="line">y = <span class="string">&#x27;HELLO SIR!&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(y) <span class="comment"># 输出：HELLO SIR！</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># ____________________________________________</span></span><br><span class="line"><span class="comment"># python 垃圾回收机制 id()</span></span><br><span class="line">x = <span class="number">10</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">id</span>(x)) <span class="comment"># 输出：2774017997392</span></span><br><span class="line"></span><br><span class="line">x = <span class="number">20</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">id</span>(x)) <span class="comment"># 输出：2774017997712</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="注释："><a href="#注释：" class="headerlink" title="注释："></a>注释：</h3><ul>
+<li>单行 <code># Hello</code></li>
+<li>多行<code>&#39;&#39;&#39; Hello &#39;&#39;&#39;</code></li>
+</ul>
+<h3 id="python的语句分隔符："><a href="#python的语句分隔符：" class="headerlink" title="python的语句分隔符："></a>python的语句分隔符：</h3><ul>
+<li>换行：python默认使用换行做分隔符</li>
+<li>缩进：python使用一个Tab键做类似函数和判断的代码分隔块</li>
+</ul>
+<h3 id="PEP-8-规范："><a href="#PEP-8-规范：" class="headerlink" title="PEP 8 规范："></a>PEP 8 规范：</h3><p>即美观 <code>Win 格式化快捷键：CTRL + ALT + L  </code></p>
+<h3 id="整型、浮点型、布尔型："><a href="#整型、浮点型、布尔型：" class="headerlink" title="整型、浮点型、布尔型："></a>整型、浮点型、布尔型：</h3><p><code>type()</code></p>
+<p>整型：<code>x = 1</code></p>
+<p>浮点型：<code>x = 3.14</code></p>
+<p>布尔型：<code>x = True、x = 0 #输出：False</code></p>
+<h3 id="字符串基本操作："><a href="#字符串基本操作：" class="headerlink" title="字符串基本操作："></a>字符串基本操作：</h3><h4 id="（1）转义符："><a href="#（1）转义符：" class="headerlink" title="（1）转义符：\"></a>（1）转义符：<code>\</code></h4><ul>
+<li>将普通符号特殊化</li>
+<li>将特殊符号普通化</li>
+</ul>
+<h4 id="（2）长字符串："><a href="#（2）长字符串：" class="headerlink" title="（2）长字符串："></a>（2）长字符串：</h4><p><code>s = &quot;ssssssssssssssssssssssssssssssssssssss&quot;</code></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">Hello sir!</span></span><br><span class="line"><span class="string">nice to see you!</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="（3）格式化输出："><a href="#（3）格式化输出：" class="headerlink" title="（3）格式化输出："></a>（3）格式化输出：</h4><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">&#x27;man&#x27;</span></span><br><span class="line">age = <span class="number">18</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;name:%s,age:%s&#x27;</span> %(name, age))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&#x27;name:<span class="subst">&#123;name&#125;</span>,age:<span class="subst">&#123;age&#125;</span>&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="（4）字符串序列类型操作："><a href="#（4）字符串序列类型操作：" class="headerlink" title="（4）字符串序列类型操作："></a>（4）字符串序列类型操作：</h4><p>正、负 索引</p>
+<p>字符串[开始索引:结束索引:步长 &#x3D; 1]</p>
+<h4 id="（5）in判断是否存在"><a href="#（5）in判断是否存在" class="headerlink" title="（5）in判断是否存在"></a>（5）in判断是否存在</h4><p>返回布尔值</p>
+<p><code>&quot;sir&quot; in s</code><br>主要是s里有‘sir’吗？</p>
+<h4 id="（6）字符串拼接"><a href="#（6）字符串拼接" class="headerlink" title="（6）字符串拼接"></a>（6）字符串拼接</h4><p><code>a = &#39;hello &#39;</code></p>
+<p><code>b = &#39;sir&#39;</code></p>
+<p><code>a + b</code></p>
+<h3 id="字符串的内置方法："><a href="#字符串的内置方法：" class="headerlink" title="字符串的内置方法："></a>字符串的内置方法：</h3><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>作用</th>
+<th align="center">示例</th>
+<th>输出</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>upper</code></td>
+<td>全部大写</td>
+<td align="center"><code>&quot;hello&quot;.upper()</code></td>
+<td>“HELLO”</td>
+</tr>
+<tr>
+<td><code>lower</code></td>
+<td>全部小写</td>
+<td align="center"><code>&quot;Hello&quot;.lower()</code></td>
+<td>“hello”</td>
+</tr>
+<tr>
+<td><code>startswith()</code></td>
+<td>是否以指定内容开头</td>
+<td align="center"><code>&quot;Yuan&quot;.startswith(&quot;Yu&quot;)</code></td>
+<td>True</td>
+</tr>
+<tr>
+<td><code>endswith()</code></td>
+<td>是否以指定内容结尾</td>
+<td align="center"><code>&quot;Yuan&quot;.endswith(&quot;a&quot;)</code></td>
+<td>False</td>
+</tr>
+<tr>
+<td><code>isdigit()</code></td>
+<td>是否全数字</td>
+<td align="center"><code>&#39;123&#39;.isdigit()</code></td>
+<td>True</td>
+</tr>
+<tr>
+<td><code>strip()</code></td>
+<td>去两边空格</td>
+<td align="center"><code>&quot; hi yuan \n&quot;.strip()</code></td>
+<td>“hi yuan”</td>
+</tr>
+<tr>
+<td><code>join()</code></td>
+<td>将多个字符串连接在一起</td>
+<td align="center"><code>&quot;-&quot;.join([&quot;yuan&quot;,&quot;alvin&quot;,&quot;eric&quot;])</code></td>
+<td>“yuan-alvin-eric”</td>
+</tr>
+<tr>
+<td><code>split()</code></td>
+<td>按某字符分割字符串，默认按空格分隔</td>
+<td align="center"><code>&quot;yuan-alvin-eric&quot;.split(&quot;-&quot;)</code></td>
+<td>[‘yuan’, ‘alvin’, ‘eric’]</td>
+</tr>
+<tr>
+<td><code>find()</code></td>
+<td>搜索指定字符串，没有返回 -1</td>
+<td align="center"><code>&quot;hello world&quot;.find(&quot;w&quot;)</code></td>
+<td>6</td>
+</tr>
+<tr>
+<td><code>index()</code></td>
+<td>同上，但是找不到会报错</td>
+<td align="center"><code>&quot;hello world&quot;.index(&quot;w&quot;)</code></td>
+<td>6</td>
+</tr>
+<tr>
+<td><code>count()</code></td>
+<td>统计指定的字符串出现的次数</td>
+<td align="center"><code>&quot;hello world&quot;.count(&quot;l&quot;)</code></td>
+<td>3</td>
+</tr>
+<tr>
+<td><code>replace()</code></td>
+<td>替换 old 为 new</td>
+<td align="center"><code>&#39;hello world&#39;.replace(&#39;world&#39;, &#39;python&#39;)</code></td>
+<td>“hello python”</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>  类型对象.该类型对象拥有的方法</p>
+</blockquote>
+<h3 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h3><p>转字符串:<code>str()</code></p>
+<p>转  数  字:<code>int()</code></p>
+<h2 id="Day-02"><a href="#Day-02" class="headerlink" title="Day 02:"></a>Day 02:</h2><h3 id="python运算符"><a href="#python运算符" class="headerlink" title="python运算符"></a>python运算符</h3><p><code>数据类型 + 运算符 =&gt; 语句</code></p>
+<p>​        ||</p>
+<p>可以识别的数据</p>
+<p>（1）科学计算运算符</p>
+<p>+、-、*、&#x2F;、%（取余）</p>
+<p>（2）赋值运算符</p>
+<p>自加1：<code>y = 10</code>,<code>y = y + 1</code>,<code>y += 1</code></p>
+<p>（3）比较运算符</p>
+<p>&lt;、&gt;、&#x3D;&#x3D;、!&#x3D;</p>
+<p>（4）逻辑运算符</p>
+<p>or、and</p>
+<h3 id="流程控制语句："><a href="#流程控制语句：" class="headerlink" title="流程控制语句："></a><strong>流程控制语句：</strong></h3><p>（1）顺序语句：从上到下执行一次</p>
+<p>（2）分支语句：</p>
 <ul>
-<li>掌握主流 JS 逆向技能：XHR 抓包、JS 混淆分析、Crypto 签名破解</li>
-<li>能独立逆向一个常见接口（如：翻译、搜索、短视频）</li>
-<li>有至少 1–2 个能展示的“实战作品”</li>
-<li>入门能变现的技能路径（如：爬虫服务、接私活、技术写作）</li>
+<li>单分支</li>
+<li>双分支</li>
 </ul>
-<hr>
-<h1 id="🧭-JavaScript-逆向学习路线图（60天）"><a href="#🧭-JavaScript-逆向学习路线图（60天）" class="headerlink" title="🧭 JavaScript 逆向学习路线图（60天）"></a>🧭 JavaScript 逆向学习路线图（60天）</h1><hr>
-<h2 id="✅-阶段一：基础技能打底（Day-1–15）"><a href="#✅-阶段一：基础技能打底（Day-1–15）" class="headerlink" title="✅ 阶段一：基础技能打底（Day 1–15）"></a>✅ 阶段一：基础技能打底（Day 1–15）</h2><h3 id="🎯目标："><a href="#🎯目标：" class="headerlink" title="🎯目标："></a>🎯目标：</h3><ul>
-<li>熟练使用调试工具</li>
-<li>能看懂 JS 基础 + 常见混淆</li>
-<li>学会抓包 + 动态调试</li>
+<h3 id="while循环语句："><a href="#while循环语句：" class="headerlink" title="while循环语句："></a>while循环语句：</h3><p>程序员：</p>
+<ul>
+<li>避免重复</li>
+<li>结偶</li>
 </ul>
-<h3 id="📚内容安排："><a href="#📚内容安排：" class="headerlink" title="📚内容安排："></a>📚内容安排：</h3><table>
-<thead>
-<tr>
-<th>主题</th>
-<th>学习重点</th>
-<th>推荐资源</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Chrome DevTools</td>
-<td>Sources、XHR、断点、Call Stack</td>
-<td>B站：DevTools 实战</td>
-</tr>
-<tr>
-<td>JS 运行原理</td>
-<td>作用域、闭包、异步、eval</td>
-<td>菜鸟教程 + MDN</td>
-</tr>
-<tr>
-<td>抓包与网络</td>
-<td>抓包工具（Charles&#x2F;Fiddler）</td>
-<td>B站：接口抓包教程</td>
-</tr>
-<tr>
-<td>简单逆向案例</td>
-<td>百度翻译、有道翻译接口</td>
-<td>掘金&#x2F;B站搜索“JS逆向 百度翻译”</td>
-</tr>
-</tbody></table>
-<h3 id="🛠-工具清单："><a href="#🛠-工具清单：" class="headerlink" title="🛠 工具清单："></a>🛠 工具清单：</h3><ul>
-<li>Chrome 浏览器 + DevTools</li>
-<li>抓包软件：Fiddler &#x2F; Charles &#x2F; mitmproxy</li>
-<li>编辑器：VSCode + 插件（JS Pretty、Prettier）</li>
-</ul>
-<hr>
-<h2 id="✅-阶段二：核心逆向技能（Day-16–35）"><a href="#✅-阶段二：核心逆向技能（Day-16–35）" class="headerlink" title="✅ 阶段二：核心逆向技能（Day 16–35）"></a>✅ 阶段二：核心逆向技能（Day 16–35）</h2><h3 id="🎯目标：-1"><a href="#🎯目标：-1" class="headerlink" title="🎯目标："></a>🎯目标：</h3><ul>
-<li>能分析中等复杂度的 JS 接口</li>
-<li>熟悉混淆、加密、AST 等关键技术</li>
-</ul>
-<h3 id="📚内容安排：-1"><a href="#📚内容安排：-1" class="headerlink" title="📚内容安排："></a>📚内容安排：</h3><table>
-<thead>
-<tr>
-<th>主题</th>
-<th>技术点</th>
-<th>推荐项目</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>JS 加密分析</td>
-<td>Base64、MD5、HMAC、AES</td>
-<td>有赞、微博、知乎接口</td>
-</tr>
-<tr>
-<td>AST 分析</td>
-<td>使用 <code>acorn</code>, <code>babel-parser</code></td>
-<td>解混淆脚本</td>
-</tr>
-<tr>
-<td>Hook 技术</td>
-<td>使用 <code>frida</code> &#x2F; <code>Proxy</code></td>
-<td>拦截数据流</td>
-</tr>
-<tr>
-<td>逆向小程序</td>
-<td>微信小程序解包 + 数据逆向</td>
-<td>小红书&#x2F;小程序登录</td>
-</tr>
-</tbody></table>
-<h3 id="🔧-工具升级："><a href="#🔧-工具升级：" class="headerlink" title="🔧 工具升级："></a>🔧 工具升级：</h3><ul>
-<li>Node.js + <code>crypto-js</code></li>
-<li>Babel AST 工具（在线或本地）</li>
-<li>mitmproxy + 手机代理（抓小程序数据）</li>
-<li>Charles 设置 HTTPS 抓包</li>
-</ul>
-<hr>
-<h2 id="✅-阶段三：实战与变现（Day-36–60）"><a href="#✅-阶段三：实战与变现（Day-36–60）" class="headerlink" title="✅ 阶段三：实战与变现（Day 36–60）"></a>✅ 阶段三：实战与变现（Day 36–60）</h2><h3 id="🎯目标：-2"><a href="#🎯目标：-2" class="headerlink" title="🎯目标："></a>🎯目标：</h3><ul>
-<li>独立完成1–2个逆向实战项目</li>
-<li>输出博客或B站教程</li>
-<li>探索变现机会</li>
-</ul>
-<h3 id="💡项目推荐（任选2个）："><a href="#💡项目推荐（任选2个）：" class="headerlink" title="💡项目推荐（任选2个）："></a>💡项目推荐（任选2个）：</h3><table>
-<thead>
-<tr>
-<th>项目</th>
-<th>逆向点</th>
-<th>延伸方向</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>某电商网页接口</td>
-<td>参数签名分析</td>
-<td>自动下单脚本</td>
-</tr>
-<tr>
-<td>抖音&#x2F;微博热门接口</td>
-<td>加密参数、时间戳</td>
-<td>数据分析爬虫</td>
-</tr>
-<tr>
-<td>微信小程序（本地商户类）</td>
-<td>请求数据加密</td>
-<td>同步数据到自建系统</td>
-</tr>
-<tr>
-<td>某翻译网站</td>
-<td>cookie&#x2F;session机制</td>
-<td>多语言数据采集</td>
-</tr>
-</tbody></table>
-<h3 id="🚀-变现建议："><a href="#🚀-变现建议：" class="headerlink" title="🚀 变现建议："></a>🚀 变现建议：</h3><ul>
-<li>写技术博客（掘金、知乎、B站）：能吸引同行和潜在客户</li>
-<li>在咸鱼&#x2F;QQ群&#x2F;自由职业平台（如PIGDATA）接活</li>
-<li>尝试做“爬虫服务”或“接口API代理”，为小商户提供数据</li>
-</ul>
-<hr>
-<h2 id="✨-附加建议："><a href="#✨-附加建议：" class="headerlink" title="✨ 附加建议："></a>✨ 附加建议：</h2><table>
-<thead>
-<tr>
-<th>类别</th>
-<th>建议</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>学习节奏</td>
-<td>每天安排 1–2 小时实战 + 复盘</td>
-</tr>
-<tr>
-<td>记录方式</td>
-<td>用Notion或语雀整理项目笔记</td>
-</tr>
-<tr>
-<td>交流圈子</td>
-<td>加入“爬虫逆向”QQ群&#x2F;微信群（安全+技术+私活）</td>
-</tr>
-<tr>
-<td>心态建议</td>
-<td>不追求“看得懂全部源码”，只要搞懂关键加密逻辑就够用</td>
-</tr>
-</tbody></table>
-<hr>
-<h2 id="如果你愿意，我可以帮你："><a href="#如果你愿意，我可以帮你：" class="headerlink" title="如果你愿意，我可以帮你："></a>如果你愿意，我可以帮你：</h2><ul>
-<li>安排一个<strong>每天的学习计划表（任务 + 推荐视频&#x2F;资源）</strong></li>
-<li>指定你正在逆的目标网站，<strong>手把手分析第一步</strong></li>
-<li>帮你搭建一个展示博客&#x2F;主页，把你做过的项目变成“履历”</li>
-</ul>
-<p>👉 你现在最想逆向哪个网站或APP的接口？或者，我可以推荐一个好练手的目标，你选一个来开干？</p>
-<p>太棒了，搭建一个<strong>展示型博客&#x2F;主页</strong>是你进入逆向圈、找合作、接单、甚至未来跳槽的关键步骤。这个博客不是“为了炫技”，而是让别人<strong>看到你的实力、清楚你能干什么</strong>。</p>
-<hr>
-<h2 id="✨-我可以帮你搭建一个这样的主页："><a href="#✨-我可以帮你搭建一个这样的主页：" class="headerlink" title="✨ 我可以帮你搭建一个这样的主页："></a>✨ 我可以帮你搭建一个这样的主页：</h2><h3 id="✅-博客定位："><a href="#✅-博客定位：" class="headerlink" title="✅ 博客定位："></a>✅ 博客定位：</h3><blockquote>
-<p>  “我是一个专注于JS逆向、安全研究与接口分析的学习者，目前正在从0到实战构建逆向能力。”</p>
-</blockquote>
-<hr>
-<h2 id="🧱-博客主页结构设计（建议这样分区）："><a href="#🧱-博客主页结构设计（建议这样分区）：" class="headerlink" title="🧱 博客主页结构设计（建议这样分区）："></a>🧱 博客主页结构设计（建议这样分区）：</h2><h3 id="🏠-首页（Home）"><a href="#🏠-首页（Home）" class="headerlink" title="🏠 首页（Home）"></a>🏠 首页（Home）</h3><ul>
-<li>简洁介绍你自己</li>
-<li>展示擅长方向、目前技能图谱（比如 JS 逆向、抓包、加解密分析）</li>
-<li>联系方式（邮箱&#x2F;Telegram&#x2F;Github）</li>
-</ul>
-<h3 id="📓-博客页（Blog）"><a href="#📓-博客页（Blog）" class="headerlink" title="📓 博客页（Blog）"></a>📓 博客页（Blog）</h3><ul>
-<li>写你逆向过的项目（比如《百度翻译接口逆向》《知乎签名参数分析》）</li>
-<li>说明分析过程、遇到的难点、最终的成果（可贴图、代码段）</li>
-</ul>
-<h3 id="🧰-工具与资源（Tools）"><a href="#🧰-工具与资源（Tools）" class="headerlink" title="🧰 工具与资源（Tools）"></a>🧰 工具与资源（Tools）</h3><ul>
-<li>你用的插件、抓包工具、AST工具推荐</li>
-<li>甚至可以分享你整理的学习资料包（建立权威）</li>
-</ul>
-<h3 id="🧪-项目展示（Projects）"><a href="#🧪-项目展示（Projects）" class="headerlink" title="🧪 项目展示（Projects）"></a>🧪 项目展示（Projects）</h3><ul>
-<li>小型逆向脚本 + 项目说明 + GitHub链接</li>
-<li>视频或GIF演示（抓到数据 → 解密 → 展示）</li>
-</ul>
-<h3 id="📮-联系我（Hire-me）"><a href="#📮-联系我（Hire-me）" class="headerlink" title="📮 联系我（Hire me）"></a>📮 联系我（Hire me）</h3><ul>
-<li>开放私活通道：“我可以为你做接口分析、JS加密分析、爬虫逆向”</li>
-<li>留邮箱、TG或某私密联系方式</li>
-</ul>
-<hr>
-<h2 id="🚀-技术方案推荐："><a href="#🚀-技术方案推荐：" class="headerlink" title="🚀 技术方案推荐："></a>🚀 技术方案推荐：</h2><h3 id="🔧-推荐搭建方式（选1个）："><a href="#🔧-推荐搭建方式（选1个）：" class="headerlink" title="🔧 推荐搭建方式（选1个）："></a>🔧 推荐搭建方式（选1个）：</h3><h4 id="✅-方式1：纯静态博客-自动部署（最推荐）"><a href="#✅-方式1：纯静态博客-自动部署（最推荐）" class="headerlink" title="✅ 方式1：纯静态博客 + 自动部署（最推荐）"></a>✅ 方式1：纯静态博客 + 自动部署（最推荐）</h4><table>
-<thead>
-<tr>
-<th>项目</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>框架</td>
-<td><a target="_blank" rel="noopener" href="https://astro.build/">Astro</a> &#x2F; <a target="_blank" rel="noopener" href="https://nextjs.org/">Next.js</a></td>
-</tr>
-<tr>
-<td>主题</td>
-<td>Hacker-style 极简黑科技风格</td>
-</tr>
-<tr>
-<td>写作格式</td>
-<td>Markdown（写起来简单）</td>
-</tr>
-<tr>
-<td>自动部署</td>
-<td>GitHub Pages &#x2F; Vercel 免费</td>
-</tr>
-</tbody></table>
-<blockquote>
-<p>  好处：<strong>速度快、免服务器、维护简单、支持代码高亮与部署项目演示</strong>。</p>
-</blockquote>
-<h4 id="✅-方式2：用开源写作平台（快速搭建）"><a href="#✅-方式2：用开源写作平台（快速搭建）" class="headerlink" title="✅ 方式2：用开源写作平台（快速搭建）"></a>✅ 方式2：用开源写作平台（快速搭建）</h4><ul>
-<li><strong>Notion + Fruition</strong>：写在 Notion，绑定自己域名，看起来像博客</li>
-<li><strong>语雀 + Hugo 主题导出</strong>：适合国内访客</li>
-<li><strong>Hexo&#x2F;Gatsby&#x2F;Jekyll</strong>：老牌方案，但配置复杂点</li>
-</ul>
-<hr>
-<h2 id="🧑‍💻-举个真实例子："><a href="#🧑‍💻-举个真实例子：" class="headerlink" title="🧑‍💻 举个真实例子："></a>🧑‍💻 举个真实例子：</h2><p>你可以这样写博客标题和内容：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">【项目逆向实战】有道翻译接口签名逆向全过程（含源码+图解）</span><br><span class="line">🎯 项目目标：模拟完整翻译接口请求</span><br><span class="line">🧠 涉及技术：XHR 抓包、JS 加密、MD5 分析、时间戳拼接</span><br><span class="line">📦 成果展示：成功获取翻译内容，封装成API，支持批量翻译</span><br><span class="line">🛠 工具：Chrome Devtools + Node.js + crypto-js</span><br><span class="line">📎 GitHub链接：xxxxxx</span><br></pre></td></tr></table></figure>
+<p>while 是条件循环（判断条件的真假）</p>
+<p>for 是遍历循环（遍历元素：列表、字典）</p>
+<h3 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,<span class="number">10</span>):</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure>
 
-<p>这种写法非常加分，不只是“我能做”，而是“我做过，我能讲清楚”。</p>
-<hr>
-<h2 id="✍️-如果你愿意，我可以现在就："><a href="#✍️-如果你愿意，我可以现在就：" class="headerlink" title="✍️ 如果你愿意，我可以现在就："></a>✍️ 如果你愿意，我可以现在就：</h2><ul>
-<li>给你生成一个<strong>开源博客模板（Astro &#x2F; Next.js）</strong></li>
-<li>把博客内容按模块分好，你只需要填内容就能上线</li>
-<li>如果你还没有 GitHub 或部署经验，我也能一步步教你部署到线上</li>
-</ul>
-<p>👉 想让我帮你搭建哪种？要不要我直接先生成一个博客首页模板给你看看？</p>
-<p>太棒了，搭建一个<strong>展示型博客&#x2F;主页</strong>是你进入逆向圈、找合作、接单、甚至未来跳槽的关键步骤。这个博客不是“为了炫技”，而是让别人<strong>看到你的实力、清楚你能干什么</strong>。</p>
-<hr>
-<h2 id="✨-我可以帮你搭建一个这样的主页：-1"><a href="#✨-我可以帮你搭建一个这样的主页：-1" class="headerlink" title="✨ 我可以帮你搭建一个这样的主页："></a>✨ 我可以帮你搭建一个这样的主页：</h2><h3 id="✅-博客定位：-1"><a href="#✅-博客定位：-1" class="headerlink" title="✅ 博客定位："></a>✅ 博客定位：</h3><blockquote>
-<p>  “我是一个专注于JS逆向、安全研究与接口分析的学习者，目前正在从0到实战构建逆向能力。”</p>
-</blockquote>
-<hr>
-<h2 id="🧱-博客主页结构设计（建议这样分区）：-1"><a href="#🧱-博客主页结构设计（建议这样分区）：-1" class="headerlink" title="🧱 博客主页结构设计（建议这样分区）："></a>🧱 博客主页结构设计（建议这样分区）：</h2><h3 id="🏠-首页（Home）-1"><a href="#🏠-首页（Home）-1" class="headerlink" title="🏠 首页（Home）"></a>🏠 首页（Home）</h3><ul>
-<li>简洁介绍你自己</li>
-<li>展示擅长方向、目前技能图谱（比如 JS 逆向、抓包、加解密分析）</li>
-<li>联系方式（邮箱&#x2F;Telegram&#x2F;Github）</li>
-</ul>
-<h3 id="📓-博客页（Blog）-1"><a href="#📓-博客页（Blog）-1" class="headerlink" title="📓 博客页（Blog）"></a>📓 博客页（Blog）</h3><ul>
-<li>写你逆向过的项目（比如《百度翻译接口逆向》《知乎签名参数分析》）</li>
-<li>说明分析过程、遇到的难点、最终的成果（可贴图、代码段）</li>
-</ul>
-<h3 id="🧰-工具与资源（Tools）-1"><a href="#🧰-工具与资源（Tools）-1" class="headerlink" title="🧰 工具与资源（Tools）"></a>🧰 工具与资源（Tools）</h3><ul>
-<li>你用的插件、抓包工具、AST工具推荐</li>
-<li>甚至可以分享你整理的学习资料包（建立权威）</li>
-</ul>
-<h3 id="🧪-项目展示（Projects）-1"><a href="#🧪-项目展示（Projects）-1" class="headerlink" title="🧪 项目展示（Projects）"></a>🧪 项目展示（Projects）</h3><ul>
-<li>小型逆向脚本 + 项目说明 + GitHub链接</li>
-<li>视频或GIF演示（抓到数据 → 解密 → 展示）</li>
-</ul>
-<h3 id="📮-联系我（Hire-me）-1"><a href="#📮-联系我（Hire-me）-1" class="headerlink" title="📮 联系我（Hire me）"></a>📮 联系我（Hire me）</h3><ul>
-<li>开放私活通道：“我可以为你做接口分析、JS加密分析、爬虫逆向”</li>
-<li>留邮箱、TG或某私密联系方式</li>
-</ul>
-<hr>
-<h2 id="🚀-技术方案推荐：-1"><a href="#🚀-技术方案推荐：-1" class="headerlink" title="🚀 技术方案推荐："></a>🚀 技术方案推荐：</h2><h3 id="🔧-推荐搭建方式（选1个）：-1"><a href="#🔧-推荐搭建方式（选1个）：-1" class="headerlink" title="🔧 推荐搭建方式（选1个）："></a>🔧 推荐搭建方式（选1个）：</h3><h4 id="✅-方式1：纯静态博客-自动部署（最推荐）-1"><a href="#✅-方式1：纯静态博客-自动部署（最推荐）-1" class="headerlink" title="✅ 方式1：纯静态博客 + 自动部署（最推荐）"></a>✅ 方式1：纯静态博客 + 自动部署（最推荐）</h4><table>
-<thead>
-<tr>
-<th>项目</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>框架</td>
-<td><a target="_blank" rel="noopener" href="https://astro.build/">Astro</a> &#x2F; <a target="_blank" rel="noopener" href="https://nextjs.org/">Next.js</a></td>
-</tr>
-<tr>
-<td>主题</td>
-<td>Hacker-style 极简黑科技风格</td>
-</tr>
-<tr>
-<td>写作格式</td>
-<td>Markdown（写起来简单）</td>
-</tr>
-<tr>
-<td>自动部署</td>
-<td>GitHub Pages &#x2F; Vercel 免费</td>
-</tr>
-</tbody></table>
-<blockquote>
-<p>  好处：<strong>速度快、免服务器、维护简单、支持代码高亮与部署项目演示</strong>。</p>
-</blockquote>
-<h4 id="✅-方式2：用开源写作平台（快速搭建）-1"><a href="#✅-方式2：用开源写作平台（快速搭建）-1" class="headerlink" title="✅ 方式2：用开源写作平台（快速搭建）"></a>✅ 方式2：用开源写作平台（快速搭建）</h4><ul>
-<li><strong>Notion + Fruition</strong>：写在 Notion，绑定自己域名，看起来像博客</li>
-<li><strong>语雀 + Hugo 主题导出</strong>：适合国内访客</li>
-<li><strong>Hexo&#x2F;Gatsby&#x2F;Jekyll</strong>：老牌方案，但配置复杂点</li>
-</ul>
-<hr>
-<h2 id="🧑‍💻-举个真实例子：-1"><a href="#🧑‍💻-举个真实例子：-1" class="headerlink" title="🧑‍💻 举个真实例子："></a>🧑‍💻 举个真实例子：</h2><p>你可以这样写博客标题和内容：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">【项目逆向实战】有道翻译接口签名逆向全过程（含源码+图解）</span><br><span class="line">🎯 项目目标：模拟完整翻译接口请求</span><br><span class="line">🧠 涉及技术：XHR 抓包、JS 加密、MD5 分析、时间戳拼接</span><br><span class="line">📦 成果展示：成功获取翻译内容，封装成API，支持批量翻译</span><br><span class="line">🛠 工具：Chrome Devtools + Node.js + crypto-js</span><br><span class="line">📎 GitHub链接：xxxxxx</span><br></pre></td></tr></table></figure>
 
-<p>这种写法非常加分，不只是“我能做”，而是“我做过，我能讲清楚”。</p>
-<hr>
-<h2 id="✍️-如果你愿意，我可以现在就：-1"><a href="#✍️-如果你愿意，我可以现在就：-1" class="headerlink" title="✍️ 如果你愿意，我可以现在就："></a>✍️ 如果你愿意，我可以现在就：</h2><ul>
-<li>给你生成一个<strong>开源博客模板（Astro &#x2F; Next.js）</strong></li>
-<li>把博客内容按模块分好，你只需要填内容就能上线</li>
-<li>如果你还没有 GitHub 或部署经验，我也能一步步教你部署到线上</li>
+
+
+
+
+
+<h2 id="Day-03："><a href="#Day-03：" class="headerlink" title="Day 03："></a>Day 03：</h2><h3 id="列表和字典"><a href="#列表和字典" class="headerlink" title="列表和字典"></a>列表和字典</h3><p>基本数据类型：</p>
+<p>int、float、str、bool</p>
+<p>可变数字类型（没有返回值）：</p>
+<p>列表、字典</p>
+<h4 id="列表基本操作："><a href="#列表基本操作：" class="headerlink" title="列表基本操作："></a>列表基本操作：</h4><p>增：</p>
+<p>append()</p>
+<p>insert()</p>
+<p>extend()</p>
+<p>删：</p>
+<p>remove()</p>
+<p>pop()</p>
+<p>改：</p>
+<p>list[0] &#x3D; ‘SB’</p>
+<p>reverse()</p>
+<p>sort()</p>
+<p>查：</p>
+<p>index(‘SB’)</p>
+<p><strong>obj.append(‘数据’)</strong></p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">list1 = [<span class="string">&#x27;🐅&#x27;</span>, <span class="string">&#x27;🦁&#x27;</span>, <span class="string">&#x27;🐒&#x27;</span>, <span class="string">&#x27;🐊&#x27;</span>, <span class="string">&#x27;🦓&#x27;</span>]</span><br><span class="line">list1.append(<span class="string">&#x27;⭐&#x27;</span>) <span class="comment"># 输出：[🐅&#x27;, &#x27;🦁&#x27;, &#x27;🐒&#x27;, &#x27;🐊&#x27;, &#x27;🦓&#x27;, &#x27;⭐&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>obj.insert(索引值，数据)</strong></p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">list1 = [<span class="string">&#x27;🐅&#x27;</span>, <span class="string">&#x27;🦁&#x27;</span>, <span class="string">&#x27;🐒&#x27;</span>, <span class="string">&#x27;🐊&#x27;</span>, <span class="string">&#x27;🦓&#x27;</span>]</span><br><span class="line">list1.insert(<span class="number">0</span> ,<span class="string">&#x27;🐘&#x27;</span> )<span class="comment"># 输出：[🐅&#x27;, &#x27;🦁&#x27;, &#x27;🐒&#x27;, &#x27;🐊&#x27;, &#x27;🦓&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>obj.extend(‘数据’)</strong></p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">list1 = [<span class="string">&#x27;🐅&#x27;</span>, <span class="string">&#x27;🦁&#x27;</span>, <span class="string">&#x27;🐒&#x27;</span>, <span class="string">&#x27;🐊&#x27;</span>, <span class="string">&#x27;🦓&#x27;</span>]</span><br><span class="line">list2 = [<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line">list1.extend(list2)<span class="comment"># list1: [&#x27;🐅&#x27;, &#x27;🦁&#x27;, &#x27;🐒&#x27;, &#x27;🐊&#x27;, &#x27;🦓&#x27;, 2, 3, 4, 5]</span></span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li>删除数据<ul>
+<li><em>obj.remove(数据)</em>*</li>
+<li>*<em>obj.pop(索引)</em></li>
 </ul>
-<p>👉 想让我帮你搭建哪种？要不要我直接先生成一个博客首页模板给你看看？</p>
+</li>
+</ul>
+<p>更改数据：</p>
+<p>obj[索引] &#x3D; 数据</p>
+<p>查看元素：</p>
+<p>obj.sort() —  数字大小排序</p>
+<p>obj.reverse() — 倒序</p>
+<p>obj.index(‘数据’)</p>
+<h3 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h3><p>字典是python中唯一内建的映射（Mapping Type）数据类型</p>
+<p>字典中无序</p>
+<p><img src="/./assets/image-20250617224109264.png" alt="image-20250617224109264"></p>
+<p>删：</p>
+<p>popitem()</p>
+<p>pop(key)</p>
+<p>改：</p>
+<p>.update()</p>
+<p>查：</p>
+<p>key()</p>
+<p>values()</p>
+<p>item()</p>
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p>不定长参数：</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 不定长参数</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">student</span>(<span class="params">name, age, gender=<span class="string">&#x27;male&#x27;</span>, *tag, **more</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&#x27;姓名：<span class="subst">&#123;name&#125;</span>, 年龄: <span class="subst">&#123;age&#125;</span>, 性别：<span class="subst">&#123;gender&#125;</span>, 标签：<span class="subst">&#123;tag&#125;</span>, 更多：<span class="subst">&#123;tag&#125;</span>&#x27;</span>)</span><br><span class="line"></span><br><span class="line">student(<span class="string">&#x27;yuan&#x27;</span>,<span class="number">18</span>, <span class="string">&quot;male&quot;</span>, <span class="string">&quot;good student&quot;</span>, <span class="string">&quot;win&quot;</span>, school=<span class="string">&#x27;某大学&#x27;</span>)</span><br><span class="line"><span class="comment"># 输出：姓名：yuan, 年龄: 18, 性别：male, 标签：(&#x27;good student&#x27;, &#x27;win&#x27;), 更多：(&#x27;good student&#x27;, &#x27;win&#x27;)</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>关键字参数</p>
+<p>位置参数</p>
+<p>默认参数</p>
+<p>返回值：<br>类似赋值</p>
+<h2 id="Web基础"><a href="#Web基础" class="headerlink" title="Web基础"></a>Web基础</h2><p><img src="/./assets/image-20250623063937480.png" alt="image-20250623063937480"></p>
+<p>HTTP协议特性：<br>（1）HTTP是基于tcp&#x2F;ip协议在传输层</p>
+<p>（2）基于请求 &#x3D;&gt; 响应模式</p>
+<p>（3）无状态保存</p>
+<p>（4）长链接和短链接：<br>HTTP&#x2F;1.0 短</p>
+<p>HTTP&#x2F;1.1 长</p>
+<p><img src="/./assets/image-20250623072631762.png" alt="image-20250623072631762"></p>
+<p>请求首行：</p>
+<ol>
+<li>请求方式</li>
+<li>请求路径及参数</li>
+<li>协议及其版本号</li>
+</ol>
+<h3 id="请求协议："><a href="#请求协议：" class="headerlink" title="请求协议："></a>请求协议：</h3><p>这是我的socket server模拟：</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> socket <span class="keyword">import</span> socket</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建对象</span></span><br><span class="line">s = socket()</span><br><span class="line"><span class="comment"># 绑定本地IP和端口</span></span><br><span class="line">s.bind((<span class="string">&#x27;127.0.0.1&#x27;</span>, <span class="number">8899</span>))</span><br><span class="line"><span class="comment"># 监听</span></span><br><span class="line">s.listen(<span class="number">5</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;服务器正在运行，看看你的网站是否启动了！&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取对话小纸条</span></span><br><span class="line"><span class="keyword">while</span> <span class="number">1</span>:</span><br><span class="line">    <span class="comment"># 接受新连接：conn是新套接字对象，addr是客户端地址</span></span><br><span class="line">    conn, addr = s.accept()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;收到来自客户端的连接:&quot;</span>, addr)</span><br><span class="line">    <span class="comment"># 接收客户端数据（最大1024字节）</span></span><br><span class="line">    request_data = conn.recv(<span class="number">1024</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;请求数据:\n&#x27;</span>, request_data.decode(<span class="string">&#x27;utf-8&#x27;</span>))</span><br><span class="line">    <span class="comment"># 构建HTTP响应（修正关键问题）</span></span><br><span class="line">    conn.send(<span class="string">b&quot;HTTP/1.1 200 OK\r\n\r\n &lt;h1&gt;Hello World!&lt;/h1&gt;&lt;img src=&#x27;https://ts1.tc.mm.bing.net/th/id/OIP-C.OFMmGzZZTmTV91OgoLdeMwHaE8?w=280&amp;h=211&amp;c=8&amp;rs=1&amp;qlt=90&amp;o=6&amp;cb=ircwebp1&amp;dpr=1.5&amp;pid=3.1&amp;rm=2&#x27;/&gt;&quot;</span>)</span><br><span class="line">    conn.close()  <span class="comment"># 关闭当前连接</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>好的我们就靠上面的代码来理解请求协议：</p>
+<p><img src="/./assets/image-20250623075423356.png" alt="image-20250623075423356"></p>
+<p>这是我的postman</p>
+<p><img src="/./assets/image-20250623075611990.png" alt="image-20250623075611990"></p>
+<p>我们的目的是要理解get和post请求格式，服务器已经跑起来了，是本地</p>
+<p><img src="/./assets/image-20250623075942376.png" alt="image-20250623075942376"></p>
+<p>发送后，与此同时看咱们的服务器抓到的数据</p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">服务器正在运行，看看你的网站是否启动了！</span><br><span class="line">收到来自客户端的连接: (&#x27;127.0.0.1&#x27;, 54958)</span><br><span class="line">请求数据:</span><br><span class="line"> GET /?search=<span class="comment">%E6%B5%B7%E7%BB%B5%E5%AE%9D%E5%AE%9D HTTP/1.1</span></span><br><span class="line">User-Agent: PostmanRuntime/7.44.1</span><br><span class="line">Accept: */*</span><br><span class="line">Postman-Token: 9c771d39-4529-46f7-a1bc-eb46ea80912d</span><br><span class="line">Host: 127.0.0.1:8899</span><br><span class="line">Accept-Encoding: gzip, deflate, br</span><br><span class="line">Connection: keep-alive</span><br></pre></td></tr></table></figure>
+
+<p>请求首行：</p>
+<ol>
+<li>请求方式 GET</li>
+<li>请求路径及参数 &#x2F;?search&#x3D;%E6%B5%B7%E7%BB%B5%E5%AE%9D%E5%AE%9D</li>
+<li>协议及其版本号 HTTP&#x2F;1.1</li>
+</ol>
+<p>GET请求一眼就知道没有请求体</p>
+<p>POST：</p>
+<p><img src="/./assets/image-20250623080455117.png" alt="image-20250623080455117"></p>
+<p><img src="/./assets/image-20250623080535001.png" alt="image-20250623080535001"></p>
+<p>可以发现明显的区别</p>
 
                 
             </div>
@@ -749,7 +716,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2025/06/15/%E6%95%B4%E4%BD%93%E7%9B%AE%E6%A0%87/">http://example.com/2025/06/15/%E6%95%B4%E4%BD%93%E7%9B%AE%E6%A0%87/</a>
+                    <a href="http://example.com/2025/06/23/%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0%E5%AF%BC%E8%88%AA/">http://example.com/2025/06/23/%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0%E5%AF%BC%E8%88%AA/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -871,54 +838,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2025/06/15/hexo%E6%90%AD%E5%BB%BA%E5%AE%8C%E6%88%90/">
+                <a href="/2025/06/23/%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0%E5%AF%BC%E8%88%AA/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Hexo 我的博客">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="JS逆向基础篇">
                         
-                        <span class="card-title">Hexo 我的博客</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2025-06-15
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            songwang
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2025/06/15/%E6%95%B4%E4%BD%93%E7%9B%AE%E6%A0%87/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="整体目标：JS逆向学习路线图">
-                        
-                        <span class="card-title">整体目标：JS逆向学习路线图</span>
+                        <span class="card-title">JS逆向基础篇</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -929,7 +860,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2025-06-15
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-06-23
                             </span>
                         <span class="publish-author">
                             
@@ -955,6 +886,43 @@
                         <span class="chip bg-color">逆向工程</span>
                     </a>
                     
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2025/06/15/hexo%E6%90%AD%E5%BB%BA%E5%AE%8C%E6%88%90/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Hexo 我的博客">
+                        
+                        <span class="card-title">Hexo 我的博客</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-06-15
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            songwang
+                            
+                        </span>
+                    </div>
                 </div>
                 
             </div>
