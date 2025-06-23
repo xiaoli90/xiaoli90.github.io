@@ -1,0 +1,1414 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="整体目标：JS逆向学习路线图, Dream Blog">
+    <meta name="description" content="
+好的，这是一份精心为你定制的 JS 逆向学习路线图，分为 3 个阶段，共 60 天（也可以压缩到 30 天），适合你现在这种刚起步、有基础、有动力的情况。每阶段都有明确的目标、学习内容、练手项目和推荐工具。
+
+🧠 整体目标：让你在两个月">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>整体目标：JS逆向学习路线图 | Dream Blog</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+
+
+    <!-- bg-cover style     -->
+
+
+
+<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="/css/matery.css">
+<link rel="stylesheet" type="text/css" href="/css/my.css">
+<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
+
+
+
+
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/css/post.css">
+
+
+
+
+    
+        <link rel="stylesheet" type="text/css" href="/css/reward.css">
+    
+
+
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Dream Blog</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
+      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Dream Blog</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">整体目标：JS逆向学习路线图</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/JavaScript/">
+                                <span class="chip bg-color">JavaScript</span>
+                            </a>
+                        
+                            <a href="/tags/%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B/">
+                                <span class="chip bg-color">逆向工程</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E6%8A%80%E6%9C%AF%E6%95%99%E7%A8%8B/" class="post-category">
+                                技术教程
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2025-06-15
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <hr>
+<p>好的，这是一份<strong>精心为你定制的 JS 逆向学习路线图</strong>，分为 3 个阶段，共 60 天（也可以压缩到 30 天），适合你现在这种刚起步、有基础、有动力的情况。每阶段都有明确的目标、学习内容、练手项目和推荐工具。</p>
+<hr>
+<h2 id="🧠-整体目标："><a href="#🧠-整体目标：" class="headerlink" title="🧠 整体目标："></a>🧠 <strong>整体目标：</strong></h2><p>让你在两个月内：</p>
+<ul>
+<li>掌握主流 JS 逆向技能：XHR 抓包、JS 混淆分析、Crypto 签名破解</li>
+<li>能独立逆向一个常见接口（如：翻译、搜索、短视频）</li>
+<li>有至少 1–2 个能展示的“实战作品”</li>
+<li>入门能变现的技能路径（如：爬虫服务、接私活、技术写作）</li>
+</ul>
+<hr>
+<h1 id="🧭-JavaScript-逆向学习路线图（60天）"><a href="#🧭-JavaScript-逆向学习路线图（60天）" class="headerlink" title="🧭 JavaScript 逆向学习路线图（60天）"></a>🧭 JavaScript 逆向学习路线图（60天）</h1><hr>
+<h2 id="✅-阶段一：基础技能打底（Day-1–15）"><a href="#✅-阶段一：基础技能打底（Day-1–15）" class="headerlink" title="✅ 阶段一：基础技能打底（Day 1–15）"></a>✅ 阶段一：基础技能打底（Day 1–15）</h2><h3 id="🎯目标："><a href="#🎯目标：" class="headerlink" title="🎯目标："></a>🎯目标：</h3><ul>
+<li>熟练使用调试工具</li>
+<li>能看懂 JS 基础 + 常见混淆</li>
+<li>学会抓包 + 动态调试</li>
+</ul>
+<h3 id="📚内容安排："><a href="#📚内容安排：" class="headerlink" title="📚内容安排："></a>📚内容安排：</h3><table>
+<thead>
+<tr>
+<th>主题</th>
+<th>学习重点</th>
+<th>推荐资源</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Chrome DevTools</td>
+<td>Sources、XHR、断点、Call Stack</td>
+<td>B站：DevTools 实战</td>
+</tr>
+<tr>
+<td>JS 运行原理</td>
+<td>作用域、闭包、异步、eval</td>
+<td>菜鸟教程 + MDN</td>
+</tr>
+<tr>
+<td>抓包与网络</td>
+<td>抓包工具（Charles&#x2F;Fiddler）</td>
+<td>B站：接口抓包教程</td>
+</tr>
+<tr>
+<td>简单逆向案例</td>
+<td>百度翻译、有道翻译接口</td>
+<td>掘金&#x2F;B站搜索“JS逆向 百度翻译”</td>
+</tr>
+</tbody></table>
+<h3 id="🛠-工具清单："><a href="#🛠-工具清单：" class="headerlink" title="🛠 工具清单："></a>🛠 工具清单：</h3><ul>
+<li>Chrome 浏览器 + DevTools</li>
+<li>抓包软件：Fiddler &#x2F; Charles &#x2F; mitmproxy</li>
+<li>编辑器：VSCode + 插件（JS Pretty、Prettier）</li>
+</ul>
+<hr>
+<h2 id="✅-阶段二：核心逆向技能（Day-16–35）"><a href="#✅-阶段二：核心逆向技能（Day-16–35）" class="headerlink" title="✅ 阶段二：核心逆向技能（Day 16–35）"></a>✅ 阶段二：核心逆向技能（Day 16–35）</h2><h3 id="🎯目标：-1"><a href="#🎯目标：-1" class="headerlink" title="🎯目标："></a>🎯目标：</h3><ul>
+<li>能分析中等复杂度的 JS 接口</li>
+<li>熟悉混淆、加密、AST 等关键技术</li>
+</ul>
+<h3 id="📚内容安排：-1"><a href="#📚内容安排：-1" class="headerlink" title="📚内容安排："></a>📚内容安排：</h3><table>
+<thead>
+<tr>
+<th>主题</th>
+<th>技术点</th>
+<th>推荐项目</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>JS 加密分析</td>
+<td>Base64、MD5、HMAC、AES</td>
+<td>有赞、微博、知乎接口</td>
+</tr>
+<tr>
+<td>AST 分析</td>
+<td>使用 <code>acorn</code>, <code>babel-parser</code></td>
+<td>解混淆脚本</td>
+</tr>
+<tr>
+<td>Hook 技术</td>
+<td>使用 <code>frida</code> &#x2F; <code>Proxy</code></td>
+<td>拦截数据流</td>
+</tr>
+<tr>
+<td>逆向小程序</td>
+<td>微信小程序解包 + 数据逆向</td>
+<td>小红书&#x2F;小程序登录</td>
+</tr>
+</tbody></table>
+<h3 id="🔧-工具升级："><a href="#🔧-工具升级：" class="headerlink" title="🔧 工具升级："></a>🔧 工具升级：</h3><ul>
+<li>Node.js + <code>crypto-js</code></li>
+<li>Babel AST 工具（在线或本地）</li>
+<li>mitmproxy + 手机代理（抓小程序数据）</li>
+<li>Charles 设置 HTTPS 抓包</li>
+</ul>
+<hr>
+<h2 id="✅-阶段三：实战与变现（Day-36–60）"><a href="#✅-阶段三：实战与变现（Day-36–60）" class="headerlink" title="✅ 阶段三：实战与变现（Day 36–60）"></a>✅ 阶段三：实战与变现（Day 36–60）</h2><h3 id="🎯目标：-2"><a href="#🎯目标：-2" class="headerlink" title="🎯目标："></a>🎯目标：</h3><ul>
+<li>独立完成1–2个逆向实战项目</li>
+<li>输出博客或B站教程</li>
+<li>探索变现机会</li>
+</ul>
+<h3 id="💡项目推荐（任选2个）："><a href="#💡项目推荐（任选2个）：" class="headerlink" title="💡项目推荐（任选2个）："></a>💡项目推荐（任选2个）：</h3><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>逆向点</th>
+<th>延伸方向</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>某电商网页接口</td>
+<td>参数签名分析</td>
+<td>自动下单脚本</td>
+</tr>
+<tr>
+<td>抖音&#x2F;微博热门接口</td>
+<td>加密参数、时间戳</td>
+<td>数据分析爬虫</td>
+</tr>
+<tr>
+<td>微信小程序（本地商户类）</td>
+<td>请求数据加密</td>
+<td>同步数据到自建系统</td>
+</tr>
+<tr>
+<td>某翻译网站</td>
+<td>cookie&#x2F;session机制</td>
+<td>多语言数据采集</td>
+</tr>
+</tbody></table>
+<h3 id="🚀-变现建议："><a href="#🚀-变现建议：" class="headerlink" title="🚀 变现建议："></a>🚀 变现建议：</h3><ul>
+<li>写技术博客（掘金、知乎、B站）：能吸引同行和潜在客户</li>
+<li>在咸鱼&#x2F;QQ群&#x2F;自由职业平台（如PIGDATA）接活</li>
+<li>尝试做“爬虫服务”或“接口API代理”，为小商户提供数据</li>
+</ul>
+<hr>
+<h2 id="✨-附加建议："><a href="#✨-附加建议：" class="headerlink" title="✨ 附加建议："></a>✨ 附加建议：</h2><table>
+<thead>
+<tr>
+<th>类别</th>
+<th>建议</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>学习节奏</td>
+<td>每天安排 1–2 小时实战 + 复盘</td>
+</tr>
+<tr>
+<td>记录方式</td>
+<td>用Notion或语雀整理项目笔记</td>
+</tr>
+<tr>
+<td>交流圈子</td>
+<td>加入“爬虫逆向”QQ群&#x2F;微信群（安全+技术+私活）</td>
+</tr>
+<tr>
+<td>心态建议</td>
+<td>不追求“看得懂全部源码”，只要搞懂关键加密逻辑就够用</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="如果你愿意，我可以帮你："><a href="#如果你愿意，我可以帮你：" class="headerlink" title="如果你愿意，我可以帮你："></a>如果你愿意，我可以帮你：</h2><ul>
+<li>安排一个<strong>每天的学习计划表（任务 + 推荐视频&#x2F;资源）</strong></li>
+<li>指定你正在逆的目标网站，<strong>手把手分析第一步</strong></li>
+<li>帮你搭建一个展示博客&#x2F;主页，把你做过的项目变成“履历”</li>
+</ul>
+<p>👉 你现在最想逆向哪个网站或APP的接口？或者，我可以推荐一个好练手的目标，你选一个来开干？</p>
+<p>太棒了，搭建一个<strong>展示型博客&#x2F;主页</strong>是你进入逆向圈、找合作、接单、甚至未来跳槽的关键步骤。这个博客不是“为了炫技”，而是让别人<strong>看到你的实力、清楚你能干什么</strong>。</p>
+<hr>
+<h2 id="✨-我可以帮你搭建一个这样的主页："><a href="#✨-我可以帮你搭建一个这样的主页：" class="headerlink" title="✨ 我可以帮你搭建一个这样的主页："></a>✨ 我可以帮你搭建一个这样的主页：</h2><h3 id="✅-博客定位："><a href="#✅-博客定位：" class="headerlink" title="✅ 博客定位："></a>✅ 博客定位：</h3><blockquote>
+<p>  “我是一个专注于JS逆向、安全研究与接口分析的学习者，目前正在从0到实战构建逆向能力。”</p>
+</blockquote>
+<hr>
+<h2 id="🧱-博客主页结构设计（建议这样分区）："><a href="#🧱-博客主页结构设计（建议这样分区）：" class="headerlink" title="🧱 博客主页结构设计（建议这样分区）："></a>🧱 博客主页结构设计（建议这样分区）：</h2><h3 id="🏠-首页（Home）"><a href="#🏠-首页（Home）" class="headerlink" title="🏠 首页（Home）"></a>🏠 首页（Home）</h3><ul>
+<li>简洁介绍你自己</li>
+<li>展示擅长方向、目前技能图谱（比如 JS 逆向、抓包、加解密分析）</li>
+<li>联系方式（邮箱&#x2F;Telegram&#x2F;Github）</li>
+</ul>
+<h3 id="📓-博客页（Blog）"><a href="#📓-博客页（Blog）" class="headerlink" title="📓 博客页（Blog）"></a>📓 博客页（Blog）</h3><ul>
+<li>写你逆向过的项目（比如《百度翻译接口逆向》《知乎签名参数分析》）</li>
+<li>说明分析过程、遇到的难点、最终的成果（可贴图、代码段）</li>
+</ul>
+<h3 id="🧰-工具与资源（Tools）"><a href="#🧰-工具与资源（Tools）" class="headerlink" title="🧰 工具与资源（Tools）"></a>🧰 工具与资源（Tools）</h3><ul>
+<li>你用的插件、抓包工具、AST工具推荐</li>
+<li>甚至可以分享你整理的学习资料包（建立权威）</li>
+</ul>
+<h3 id="🧪-项目展示（Projects）"><a href="#🧪-项目展示（Projects）" class="headerlink" title="🧪 项目展示（Projects）"></a>🧪 项目展示（Projects）</h3><ul>
+<li>小型逆向脚本 + 项目说明 + GitHub链接</li>
+<li>视频或GIF演示（抓到数据 → 解密 → 展示）</li>
+</ul>
+<h3 id="📮-联系我（Hire-me）"><a href="#📮-联系我（Hire-me）" class="headerlink" title="📮 联系我（Hire me）"></a>📮 联系我（Hire me）</h3><ul>
+<li>开放私活通道：“我可以为你做接口分析、JS加密分析、爬虫逆向”</li>
+<li>留邮箱、TG或某私密联系方式</li>
+</ul>
+<hr>
+<h2 id="🚀-技术方案推荐："><a href="#🚀-技术方案推荐：" class="headerlink" title="🚀 技术方案推荐："></a>🚀 技术方案推荐：</h2><h3 id="🔧-推荐搭建方式（选1个）："><a href="#🔧-推荐搭建方式（选1个）：" class="headerlink" title="🔧 推荐搭建方式（选1个）："></a>🔧 推荐搭建方式（选1个）：</h3><h4 id="✅-方式1：纯静态博客-自动部署（最推荐）"><a href="#✅-方式1：纯静态博客-自动部署（最推荐）" class="headerlink" title="✅ 方式1：纯静态博客 + 自动部署（最推荐）"></a>✅ 方式1：纯静态博客 + 自动部署（最推荐）</h4><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>框架</td>
+<td><a target="_blank" rel="noopener" href="https://astro.build/">Astro</a> &#x2F; <a target="_blank" rel="noopener" href="https://nextjs.org/">Next.js</a></td>
+</tr>
+<tr>
+<td>主题</td>
+<td>Hacker-style 极简黑科技风格</td>
+</tr>
+<tr>
+<td>写作格式</td>
+<td>Markdown（写起来简单）</td>
+</tr>
+<tr>
+<td>自动部署</td>
+<td>GitHub Pages &#x2F; Vercel 免费</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>  好处：<strong>速度快、免服务器、维护简单、支持代码高亮与部署项目演示</strong>。</p>
+</blockquote>
+<h4 id="✅-方式2：用开源写作平台（快速搭建）"><a href="#✅-方式2：用开源写作平台（快速搭建）" class="headerlink" title="✅ 方式2：用开源写作平台（快速搭建）"></a>✅ 方式2：用开源写作平台（快速搭建）</h4><ul>
+<li><strong>Notion + Fruition</strong>：写在 Notion，绑定自己域名，看起来像博客</li>
+<li><strong>语雀 + Hugo 主题导出</strong>：适合国内访客</li>
+<li><strong>Hexo&#x2F;Gatsby&#x2F;Jekyll</strong>：老牌方案，但配置复杂点</li>
+</ul>
+<hr>
+<h2 id="🧑‍💻-举个真实例子："><a href="#🧑‍💻-举个真实例子：" class="headerlink" title="🧑‍💻 举个真实例子："></a>🧑‍💻 举个真实例子：</h2><p>你可以这样写博客标题和内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">【项目逆向实战】有道翻译接口签名逆向全过程（含源码+图解）</span><br><span class="line">🎯 项目目标：模拟完整翻译接口请求</span><br><span class="line">🧠 涉及技术：XHR 抓包、JS 加密、MD5 分析、时间戳拼接</span><br><span class="line">📦 成果展示：成功获取翻译内容，封装成API，支持批量翻译</span><br><span class="line">🛠 工具：Chrome Devtools + Node.js + crypto-js</span><br><span class="line">📎 GitHub链接：xxxxxx</span><br></pre></td></tr></table></figure>
+
+<p>这种写法非常加分，不只是“我能做”，而是“我做过，我能讲清楚”。</p>
+<hr>
+<h2 id="✍️-如果你愿意，我可以现在就："><a href="#✍️-如果你愿意，我可以现在就：" class="headerlink" title="✍️ 如果你愿意，我可以现在就："></a>✍️ 如果你愿意，我可以现在就：</h2><ul>
+<li>给你生成一个<strong>开源博客模板（Astro &#x2F; Next.js）</strong></li>
+<li>把博客内容按模块分好，你只需要填内容就能上线</li>
+<li>如果你还没有 GitHub 或部署经验，我也能一步步教你部署到线上</li>
+</ul>
+<p>👉 想让我帮你搭建哪种？要不要我直接先生成一个博客首页模板给你看看？</p>
+<p>太棒了，搭建一个<strong>展示型博客&#x2F;主页</strong>是你进入逆向圈、找合作、接单、甚至未来跳槽的关键步骤。这个博客不是“为了炫技”，而是让别人<strong>看到你的实力、清楚你能干什么</strong>。</p>
+<hr>
+<h2 id="✨-我可以帮你搭建一个这样的主页：-1"><a href="#✨-我可以帮你搭建一个这样的主页：-1" class="headerlink" title="✨ 我可以帮你搭建一个这样的主页："></a>✨ 我可以帮你搭建一个这样的主页：</h2><h3 id="✅-博客定位：-1"><a href="#✅-博客定位：-1" class="headerlink" title="✅ 博客定位："></a>✅ 博客定位：</h3><blockquote>
+<p>  “我是一个专注于JS逆向、安全研究与接口分析的学习者，目前正在从0到实战构建逆向能力。”</p>
+</blockquote>
+<hr>
+<h2 id="🧱-博客主页结构设计（建议这样分区）：-1"><a href="#🧱-博客主页结构设计（建议这样分区）：-1" class="headerlink" title="🧱 博客主页结构设计（建议这样分区）："></a>🧱 博客主页结构设计（建议这样分区）：</h2><h3 id="🏠-首页（Home）-1"><a href="#🏠-首页（Home）-1" class="headerlink" title="🏠 首页（Home）"></a>🏠 首页（Home）</h3><ul>
+<li>简洁介绍你自己</li>
+<li>展示擅长方向、目前技能图谱（比如 JS 逆向、抓包、加解密分析）</li>
+<li>联系方式（邮箱&#x2F;Telegram&#x2F;Github）</li>
+</ul>
+<h3 id="📓-博客页（Blog）-1"><a href="#📓-博客页（Blog）-1" class="headerlink" title="📓 博客页（Blog）"></a>📓 博客页（Blog）</h3><ul>
+<li>写你逆向过的项目（比如《百度翻译接口逆向》《知乎签名参数分析》）</li>
+<li>说明分析过程、遇到的难点、最终的成果（可贴图、代码段）</li>
+</ul>
+<h3 id="🧰-工具与资源（Tools）-1"><a href="#🧰-工具与资源（Tools）-1" class="headerlink" title="🧰 工具与资源（Tools）"></a>🧰 工具与资源（Tools）</h3><ul>
+<li>你用的插件、抓包工具、AST工具推荐</li>
+<li>甚至可以分享你整理的学习资料包（建立权威）</li>
+</ul>
+<h3 id="🧪-项目展示（Projects）-1"><a href="#🧪-项目展示（Projects）-1" class="headerlink" title="🧪 项目展示（Projects）"></a>🧪 项目展示（Projects）</h3><ul>
+<li>小型逆向脚本 + 项目说明 + GitHub链接</li>
+<li>视频或GIF演示（抓到数据 → 解密 → 展示）</li>
+</ul>
+<h3 id="📮-联系我（Hire-me）-1"><a href="#📮-联系我（Hire-me）-1" class="headerlink" title="📮 联系我（Hire me）"></a>📮 联系我（Hire me）</h3><ul>
+<li>开放私活通道：“我可以为你做接口分析、JS加密分析、爬虫逆向”</li>
+<li>留邮箱、TG或某私密联系方式</li>
+</ul>
+<hr>
+<h2 id="🚀-技术方案推荐：-1"><a href="#🚀-技术方案推荐：-1" class="headerlink" title="🚀 技术方案推荐："></a>🚀 技术方案推荐：</h2><h3 id="🔧-推荐搭建方式（选1个）：-1"><a href="#🔧-推荐搭建方式（选1个）：-1" class="headerlink" title="🔧 推荐搭建方式（选1个）："></a>🔧 推荐搭建方式（选1个）：</h3><h4 id="✅-方式1：纯静态博客-自动部署（最推荐）-1"><a href="#✅-方式1：纯静态博客-自动部署（最推荐）-1" class="headerlink" title="✅ 方式1：纯静态博客 + 自动部署（最推荐）"></a>✅ 方式1：纯静态博客 + 自动部署（最推荐）</h4><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>框架</td>
+<td><a target="_blank" rel="noopener" href="https://astro.build/">Astro</a> &#x2F; <a target="_blank" rel="noopener" href="https://nextjs.org/">Next.js</a></td>
+</tr>
+<tr>
+<td>主题</td>
+<td>Hacker-style 极简黑科技风格</td>
+</tr>
+<tr>
+<td>写作格式</td>
+<td>Markdown（写起来简单）</td>
+</tr>
+<tr>
+<td>自动部署</td>
+<td>GitHub Pages &#x2F; Vercel 免费</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>  好处：<strong>速度快、免服务器、维护简单、支持代码高亮与部署项目演示</strong>。</p>
+</blockquote>
+<h4 id="✅-方式2：用开源写作平台（快速搭建）-1"><a href="#✅-方式2：用开源写作平台（快速搭建）-1" class="headerlink" title="✅ 方式2：用开源写作平台（快速搭建）"></a>✅ 方式2：用开源写作平台（快速搭建）</h4><ul>
+<li><strong>Notion + Fruition</strong>：写在 Notion，绑定自己域名，看起来像博客</li>
+<li><strong>语雀 + Hugo 主题导出</strong>：适合国内访客</li>
+<li><strong>Hexo&#x2F;Gatsby&#x2F;Jekyll</strong>：老牌方案，但配置复杂点</li>
+</ul>
+<hr>
+<h2 id="🧑‍💻-举个真实例子：-1"><a href="#🧑‍💻-举个真实例子：-1" class="headerlink" title="🧑‍💻 举个真实例子："></a>🧑‍💻 举个真实例子：</h2><p>你可以这样写博客标题和内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">【项目逆向实战】有道翻译接口签名逆向全过程（含源码+图解）</span><br><span class="line">🎯 项目目标：模拟完整翻译接口请求</span><br><span class="line">🧠 涉及技术：XHR 抓包、JS 加密、MD5 分析、时间戳拼接</span><br><span class="line">📦 成果展示：成功获取翻译内容，封装成API，支持批量翻译</span><br><span class="line">🛠 工具：Chrome Devtools + Node.js + crypto-js</span><br><span class="line">📎 GitHub链接：xxxxxx</span><br></pre></td></tr></table></figure>
+
+<p>这种写法非常加分，不只是“我能做”，而是“我做过，我能讲清楚”。</p>
+<hr>
+<h2 id="✍️-如果你愿意，我可以现在就：-1"><a href="#✍️-如果你愿意，我可以现在就：-1" class="headerlink" title="✍️ 如果你愿意，我可以现在就："></a>✍️ 如果你愿意，我可以现在就：</h2><ul>
+<li>给你生成一个<strong>开源博客模板（Astro &#x2F; Next.js）</strong></li>
+<li>把博客内容按模块分好，你只需要填内容就能上线</li>
+<li>如果你还没有 GitHub 或部署经验，我也能一步步教你部署到线上</li>
+</ul>
+<p>👉 想让我帮你搭建哪种？要不要我直接先生成一个博客首页模板给你看看？</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">songwang</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://example.com/2025/06/15/%E6%95%B4%E4%BD%93%E7%9B%AE%E6%A0%87/">http://example.com/2025/06/15/%E6%95%B4%E4%BD%93%E7%9B%AE%E6%A0%87/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">songwang</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/JavaScript/">
+                                    <span class="chip bg-color">JavaScript</span>
+                                </a>
+                            
+                                <a href="/tags/%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B/">
+                                    <span class="chip bg-color">逆向工程</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.jpg" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2025/06/15/hexo%E6%90%AD%E5%BB%BA%E5%AE%8C%E6%88%90/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Hexo 我的博客">
+                        
+                        <span class="card-title">Hexo 我的博客</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2025-06-15
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            songwang
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
+            </div>
+            <div class="card">
+                <a href="/2025/06/15/%E6%95%B4%E4%BD%93%E7%9B%AE%E6%A0%87/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="整体目标：JS逆向学习路线图">
+                        
+                        <span class="card-title">整体目标：JS逆向学习路线图</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-06-15
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%8A%80%E6%9C%AF%E6%95%99%E7%A8%8B/" class="post-category">
+                                    技术教程
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/JavaScript/">
+                        <span class="chip bg-color">JavaScript</span>
+                    </a>
+                    
+                    <a href="/tags/%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B/">
+                        <span class="chip bg-color">逆向工程</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2025</span>
+            
+            <a href="/about" target="_blank">songwang</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            <br>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/xiaoli90" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:2373207381@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2373207381" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2373207381" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 白天和黑夜主题 -->
+<div class="stars-con">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>  
+</div>
+
+<script>
+    function switchNightMode() {
+        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+        setTimeout(function () {
+            $('body').hasClass('DarkMode') 
+            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
+            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
+            
+            setTimeout(function () {
+            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+                $(this).remove()
+            })
+            }, 2e3)
+        })
+    }
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+    
+    
+
+    <!-- 雪花特效 -->
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
